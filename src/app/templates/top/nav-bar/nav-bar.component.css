@@ -1,0 +1,42 @@
+div.others{
+    position: relative;
+    right: 0px;
+    padding: 1%;
+    width: calc(20% - 2%);
+}
+
+div.nav-top-fixed{
+    position:sticky;    
+    width: 100%;
+    background-color: #8050a4;
+    color: #401064;
+}
+
+div.links{
+    padding-left: 5%;
+    font-weight: bold;
+    width: calc(80% - 5%);
+}
+
+a.nav-link{
+    padding: 3px 3px;
+    margin: 0 5px;
+    background-color: #8050a4;
+    border: 1px #401064 solid;
+    box-shadow: inset 0 0 1em #603089;
+    border-radius: 10px;
+}
+
+a.nav-link:hover{
+    color: #8050a4;
+    background-color: #401064;
+}
+
+div.user{
+    text-align: right;
+    width: 80%;
+}
+
+div.others > a.notfications{
+    padding: 0 10px;
+}
