@@ -9,6 +9,7 @@ import { NotificationComponent } from './templates/top/notification/notification
 import { NavLinksComponent } from './templates/top/nav-links/nav-links.component';
 import { LoginComponent } from './components/company/login/login.component';
 import { InputComponent } from './components/shared/input/input.component';
+import { ListaVagasComponent } from './components/company/lista-vagas/lista-vagas.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InputComponent } from './components/shared/input/input.component';
     NotificationComponent,
     NavLinksComponent,
     LoginComponent,
-    InputComponent
+    InputComponent,
+    ListaVagasComponent
   ],
   imports: [
     BrowserModule,

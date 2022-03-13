@@ -57,3 +57,33 @@ input:hover{
 a:hover, button:hover, li:hover{
     cursor: pointer;
 }
+
+div.card{
+    width: auto;
+    min-width: 75px;
+    border: 1px solid #8050a4;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.card > div.card-title{
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+
+div.card > div.card-title > h3{
+    margin: 5px;
+}
+
+div.card > div.card-body{
+    padding: 5%;
+}
+
+div.card > div.card-footer{
+    border-top: 1px solid;
+    width: 100%;
+    min-height: 18px;
+}

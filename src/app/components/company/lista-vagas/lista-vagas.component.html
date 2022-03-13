@@ -1,0 +1,16 @@
+<div class="vagas">
+    <div *ngFor="let vaga of vagas">
+        <div class="card vaga-card">
+            <div class="card-title">
+                <h3>{{vaga.name}}</h3>
+            </div>
+            <div class="card-body">
+                <div class="vaga-descricao">
+                    <p>{{vaga.description}}</p>
+                </div>
+            </div>
+            <div class="card-footer">{{vaga.in_charge}}</div>
+        </div>
+    </div>
+</div>
+

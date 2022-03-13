@@ -1,0 +1,2 @@
+export interface CompanyUser {
+}
