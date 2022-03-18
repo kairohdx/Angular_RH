@@ -10,6 +10,7 @@ import { NavLinksComponent } from './templates/top/nav-links/nav-links.component
 import { LoginComponent } from './components/company/login/login.component';
 import { InputComponent } from './components/shared/input/input.component';
 import { ListaVagasComponent } from './components/company/lista-vagas/lista-vagas.component';
+import { ShowCollapseComponent } from './components/animations/show-collapse/show-collapse.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListaVagasComponent } from './components/company/lista-vagas/lista-vaga
     NavLinksComponent,
     LoginComponent,
     InputComponent,
-    ListaVagasComponent
+    ListaVagasComponent,
+    ShowCollapseComponent
   ],
   imports: [
     BrowserModule,

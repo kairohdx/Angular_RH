@@ -1,16 +1,22 @@
 <div class="vagas">
-    <div *ngFor="let vaga of vagas">
-        <div class="card vaga-card">
-            <div class="card-title">
-                <h3>{{vaga.name}}</h3>
-            </div>
-            <div class="card-body">
-                <div class="vaga-descricao">
-                    <p>{{vaga.description}}</p>
+    <div class="vaga-list" *ngFor="let list of res; let i = index"[attr.data-index]>
+        <h3 (click)="toggle(i)" class="vaga-list"><span class="vaga-list">{{status[i]}}</span></h3>
+        <div [@flyInOut]="hideRuleContent[i] ? 'in' : ''" class="vaga-list fly-in-out-container">
+            <div *ngFor="let vaga of list">
+                <div class="card vaga-card">
+                    <div class="card-title">
+                        <h3>{{vaga.name}}</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="vaga-descricao">
+                            <p>{{vaga.description}}</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">{{vaga.in_charge}}</div>
                 </div>
             </div>
-            <div class="card-footer">{{vaga.in_charge}}</div>
         </div>
+        
     </div>
 </div>
 

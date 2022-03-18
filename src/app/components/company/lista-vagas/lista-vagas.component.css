@@ -3,3 +3,28 @@ div.vaga-card{
     min-height: 350px;
 }
 
+h3.vaga-list{
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+div.vaga-list{
+    overflow: hidden;
+}
+
+h3.vaga-list > span{
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+h3.vaga-list:hover > span{
+    background-color: #c090e4;
+}
+
+.vaga-list{
+    width: 100%;
+}
+
+.vaga{
+    width: 100%;
+}
