@@ -6,20 +6,27 @@ interface Vagas extends Array<Array<Vaga>>{}
 
 @Component({
   selector: 'app-lista-vagas',
+  animations: [
+    trigger('openClose', [
+      // ...
+      state('open', style({
+        height: '*',
+        opacity: 1,
+      })),
+      state('closed', style({
+        height: '0px',
+        opacity: 0.8,
+      })),
+      transition('open => closed', [
+        animate('0.4s')
+      ]),
+      transition('closed => open', [
+        animate('0.4s')
+      ]),
+    ]),
+  ],
   templateUrl: './lista-vagas.component.html',
   styleUrls: ['./lista-vagas.component.css'],
-  animations: [
-    trigger('flyInOut', [
-      state('in', style({ transform: 'translateX(0)' })),
-      transition('void => *', [
-        style({ transform: 'translateX(-100%)' }),
-        animate(100)
-      ]),
-      transition('* => void', [
-        animate(100, style({ transform: 'translateX(100%)' }))
-      ])
-    ])
-  ],
 })
 export class ListaVagasComponent implements OnInit {
 

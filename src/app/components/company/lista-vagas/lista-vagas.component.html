@@ -1,7 +1,7 @@
 <div class="vagas">
     <div class="vaga-list" *ngFor="let list of res; let i = index"[attr.data-index]>
         <h3 (click)="toggle(i)" class="vaga-list"><span class="vaga-list">{{status[i]}}</span></h3>
-        <div [@flyInOut]="hideRuleContent[i] ? 'in' : ''" class="vaga-list fly-in-out-container">
+        <div [@openClose]="hideRuleContent[i] ? 'open' : 'closed'" class="vaga-list">
             <div *ngFor="let vaga of list">
                 <div class="card vaga-card">
                     <div class="card-title">

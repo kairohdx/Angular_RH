@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +11,6 @@ import { NavLinksComponent } from './templates/top/nav-links/nav-links.component
 import { LoginComponent } from './components/company/login/login.component';
 import { InputComponent } from './components/shared/input/input.component';
 import { ListaVagasComponent } from './components/company/lista-vagas/lista-vagas.component';
-import { ShowCollapseComponent } from './components/animations/show-collapse/show-collapse.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +22,11 @@ import { ShowCollapseComponent } from './components/animations/show-collapse/sho
     LoginComponent,
     InputComponent,
     ListaVagasComponent,
-    ShowCollapseComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
