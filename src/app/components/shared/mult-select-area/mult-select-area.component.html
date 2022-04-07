@@ -1,0 +1,25 @@
+
+<div class="multi-select-area">
+    <div class="selecteds">
+        <span (click)="toogle_selection(option)" *ngFor="let option of list_selecteds"  class="multi-select selected">
+            <div [@selected]="option.checked ? 'true' : 'false'" (@selected.done)="load_lists()">{{option.text}}</div>
+        </span>
+    </div>
+    <div *ngIf="!confirm_selecteds" class="div-unselecteds">
+        <div (click)="show_hide_options()" class="show-hide-options">
+            Selecionar Atributo
+        </div>
+        <div [@showHideOptions]="unselecteds_visible ? 'true' : 'false'" class="div-unselecteds-options">
+            <ul *ngFor="let options of list_list_options" class="unselecteds">
+                <li *ngFor="let option of options" (click)="toogle_selection(option)" class="multi-select unselecteds {{option.checked ? 'checked' : ''}}">
+                    {{option.text}}
+                </li>
+            </ul>
+        </div>        
+    </div>
+    <button (click)="toogle_confirm()" class="confirm-atributes {{confirm_selecteds ? 'round' : ''}}">{{confirm_selecteds ? 'Alterar' : 'Comfirmar seleção'}}</button>
+    <div *ngIf="confirm_selecteds" class="div-atributes">
+        <app-input *ngFor="let option of list_selecteds" [input_sets]="load_input_from_option(option)"></app-input>
+    </div>
+</div>
+

@@ -28,6 +28,7 @@ interface Vagas extends Array<Array<Vaga>>{}
   templateUrl: './lista-vagas.component.html',
   styleUrls: ['./lista-vagas.component.css'],
 })
+
 export class ListaVagasComponent implements OnInit {
 
   public vagas = [
@@ -45,7 +46,7 @@ export class ListaVagasComponent implements OnInit {
 
   
   public status = ['Solicitadas', 'Em Analise', 'Desativadas']
-  public hideRuleContent:boolean[] = [];
+  public hideRuleContent:boolean[] = []
   public res:Vagas = <Vagas>[]
 
   constructor() {

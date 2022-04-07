@@ -1,0 +1,13 @@
+<div class="form-content">
+    <form id="form-nova-vaga">
+        <app-input [input_sets]="{id: '', name:'', type: 'text', label: 'Nome', value: '' }"></app-input>
+        <app-input [input_sets]="{id: '', name:'', type: 'text', label: 'Descrição', value: '' }"></app-input>
+        <app-input [input_sets]="{id: '', name:'', type: 'text', label: 'Requisitos', value: '' }"></app-input>
+        <app-input [input_sets]="{id: '', name:'', type: 'text', label: 'Periodo da jornada', value: '' }"></app-input>
+        <app-input [input_sets]="{id: '', name:'', type: 'number', label: 'Idade', value: '' }"></app-input>
+        <app-mult-select-area (conluded)="onConcluded($event)" [list_options]="options"></app-mult-select-area>
+    </form>
+    <div *ngIf="options_concluded" class="submit">
+        <button class="submit-button" type="submit" (click)="submit()">Cadastrar</button>
+    </div>    
+</div>

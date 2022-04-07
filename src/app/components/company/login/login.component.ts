@@ -10,8 +10,8 @@ export class LoginComponent implements OnInit {
 
   constructor() {}
 
-  i_email: MyInput  = {id: '', type: 'email', label: 'E-Mail', value: '' }
-  i_pass: MyInput  = {id: '', type: 'password', label: 'Senha', value: '' }
+  i_email: MyInput  = {id: '', name:'', type: 'email', label: 'E-Mail', value: '' }
+  i_pass: MyInput  = {id: '', name:'', type: 'password', label: 'Senha', value: '' }
 
   ngOnInit(): void {
   }

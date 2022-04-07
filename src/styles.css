@@ -58,6 +58,12 @@ a:hover, button:hover, li:hover{
     cursor: pointer;
 }
 
+div.submit{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 ;
+}
+
 div.card{
     width: auto;
     min-width: 75px;

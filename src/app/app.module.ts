@@ -11,6 +11,9 @@ import { NavLinksComponent } from './templates/top/nav-links/nav-links.component
 import { LoginComponent } from './components/company/login/login.component';
 import { InputComponent } from './components/shared/input/input.component';
 import { ListaVagasComponent } from './components/company/lista-vagas/lista-vagas.component';
+import { CriarVagaComponent } from './components/company/criar-vaga/criar-vaga.component';
+import { MultSelectAreaComponent } from './components/shared/mult-select-area/mult-select-area.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,15 @@ import { ListaVagasComponent } from './components/company/lista-vagas/lista-vaga
     LoginComponent,
     InputComponent,
     ListaVagasComponent,
+    CriarVagaComponent,
+    MultSelectAreaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
